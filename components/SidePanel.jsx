@@ -20,74 +20,74 @@ const SidePanel = () => {
         <img src=''/>
       </div>
 
-      <ul className='mt-3 text-white font-bold flex-grow'>
-        <li className='mb-2 py-2 hover:shadow hover:bg-custom-gray rounded'>
+      <ul className='mt-2 text-white flex-grow'>
+        <li className='py-1 hover:shadow hover:bg-custom-gray rounded'>
           <a href='#' className='px-3 flex items-center'>
-            <GrOverview className='w-6 h-6 mr-2' />
+            <GrOverview className='w-4 h-4 mr-2' />
             Overview
           </a>
         </li>
 
-        <li className='mb-2 py-2 hover:shadow hover:bg-custom-gray rounded'>
+        <li className='mb-1 py-1 hover:shadow hover:bg-custom-gray rounded'>
           <a href='#' className='px-3 flex items-center'>
-            <FaRegUser className='w-6 h-6 mr-2' />
+            <FaRegUser className='w-4 h-4 mr-2' />
             Users
           </a>
         </li>
 
-        <li className='mb-2 py-2 hover:shadow hover:bg-custom-gray rounded'>
+        <li className='mb-1 py-1 hover:shadow hover:bg-custom-gray rounded'>
           <a href='#' className='px-3 flex items-center'>
-            <MdOutlineSubscriptions className='w-6 h-6 mr-2' />
+            <MdOutlineSubscriptions className='w-4 h-4 mr-2' />
             Subscription
           </a>
         </li>
 
-        <li className='mb-2 py-2 hover:shadow hover:bg-custom-gray rounded'>
+        <li className='mb-1 py-1 hover:shadow hover:bg-custom-gray rounded'>
           <a href='#' className='px-3 flex items-center'>
-            <AiOutlineDollarCircle className='w-6 h-6 mr-2' />
+            <AiOutlineDollarCircle className='w-4 h-4 mr-2' />
             Payments
           </a>
         </li>
 
-        <li className='mb-2 py-2 hover:shadow hover:bg-custom-gray rounded'>
+        <li className='mb-1 py-1 hover:shadow hover:bg-custom-gray rounded'>
           <a href='#' className='px-3 flex items-center'>
-            <IoSettingsOutline className='w-6 h-6 mr-2' />
+            <IoSettingsOutline className='w-4 h-4 mr-2' />
             Settings
           </a>
         </li>
 
-        <li className='mb-2 py-2 hover:shadow hover:bg-custom-gray rounded'>
+        <li className='mb-1 py-1 hover:shadow hover:bg-custom-gray rounded'>
           <a href='#' className='px-3 flex items-center'>
-            <HiOutlineClipboardDocumentList className='w-6 h-6 mr-2' />
+            <HiOutlineClipboardDocumentList className='w-4 h-4 mr-2' />
             Documentation
           </a>
         </li>
 
-        <li className='mb-2 py-2 hover:shadow hover:bg-custom-gray rounded'>
+        <li className='mb-1 py-1 hover:shadow hover:bg-custom-gray rounded'>
           <a href='#' className='px-3 flex items-center'>
-            <TbReportSearch className='w-6 h-6 mr-2' />
+            <TbReportSearch className='w-4 h-4 mr-2' />
             Reports
           </a>
         </li>
 
-        <li className='mb-2 py-2 hover:shadow hover:bg-custom-gray rounded'>
+        <li className='mb-1 py-1 hover:shadow hover:bg-custom-gray rounded'>
           <a href='#' className='px-3 flex items-center'>
-            <MdOutlineContactSupport className='w-6 h-6 mr-2' />
+            <MdOutlineContactSupport className='w-4 h-4 mr-2' />
             Support
           </a>
         </li>
 
-        <li className='mb-2 py-2 hover:shadow hover:bg-custom-gray rounded'>
+        <li className='mb-1 py-1 hover:shadow hover:bg-custom-gray rounded'>
           <a href='#' className='px-3 flex items-center'>
-            <GoDatabase className='w-6 h-6 mr-2' />
+            <GoDatabase className='w-4 h-4 mr-2' />
             Database
           </a>
         </li>
       </ul>
 
-      <div className='mt-auto mb-2 py-2 hover:shadow hover:bg-custom-gray rounded'>
+      <div className='mt-auto mb-1 py-5 hover:shadow hover:bg-custom-gray rounded'>
         <a href='#' className='px-3 flex items-center'>
-          <RiLogoutCircleLine className='w-6 h-6 mr-2' />
+          <RiLogoutCircleLine className='w-4 h-4 mr-2' />
           Logout
         </a>
       </div>
