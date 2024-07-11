@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { GrOverview } from "react-icons/gr";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineSubscriptions } from "react-icons/md";
@@ -15,12 +16,11 @@ import '../styles/globals.css';
 const SidePanel = () => {
   return (
     <div className='flex flex-col h-full'>
-      <div>
-        <h1 className='text-2xl text-white font-bold'>Admin Dashboard</h1>
-        <img src=''/>
+      <div className='flex justify-center items-center h-24'>
+        <Image src="/assets/images/logo.svg" alt="Logo" width={70} height={70} />
       </div>
 
-      <ul className='mt-2 text-white flex-grow'>
+      <ul className='mt-2 text-white flex-grow flex flex-col'>
         <li className='py-1 hover:shadow hover:bg-custom-gray rounded'>
           <a href='#' className='px-3 flex items-center'>
             <GrOverview className='w-4 h-4 mr-2' />
@@ -83,14 +83,14 @@ const SidePanel = () => {
             Database
           </a>
         </li>
-      </ul>
 
-      <div className='mt-auto mb-1 py-5 hover:shadow hover:bg-custom-gray rounded'>
-        <a href='#' className='px-3 flex items-center'>
-          <RiLogoutCircleLine className='w-4 h-4 mr-2' />
-          Logout
-        </a>
-      </div>
+        <li className='mt-auto py-1 hover:shadow hover:bg-custom-gray rounded'>
+          <a href='#' className='px-3 flex items-center'>
+            <RiLogoutCircleLine className='w-4 h-4 mr-2' />
+            Logout
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }
