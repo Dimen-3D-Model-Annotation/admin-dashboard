@@ -16,8 +16,9 @@ import '../styles/globals.css';
 const SidePanel = () => {
   return (
     <div className='flex flex-col h-full'>
-      <div className='flex justify-center items-center h-24'>
+      <div className='flex flex-col justify-center items-center h-24 mt-10 mb-5'>
         <Image src="/assets/images/logo.svg" alt="Logo" width={70} height={70} />
+        <Image src="/assets/images/logoName.svg" alt="Logo Name" width={120} height={120} />
       </div>
 
       <ul className='mt-2 text-white flex-grow flex flex-col'>
