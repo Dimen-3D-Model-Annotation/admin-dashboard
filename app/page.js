@@ -9,14 +9,13 @@ export default function Home() {
         <SidePanel />
       </div>
       <div className="flex-grow bg-[#121316] text-white p-4">
-        <Header />
+        
         <div className="p-4">
           <div>
-            <TopCards />
+            
           </div>
           <div className="flex space-x-4 mt-4">
-            <div>Chart 1</div>
-            <div>Chart 2</div>
+            
           </div>
         </div>
       </div>
