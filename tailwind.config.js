@@ -17,6 +17,9 @@ module.exports = {
         'custom-gray': 'rgba(217, 217, 217, 0.38)',
         'custom-purple': '#A020FF',
       },
+      width: {
+        'custom-width': '75%', // Custom width class
+      },
     },
   },
   plugins: [],
