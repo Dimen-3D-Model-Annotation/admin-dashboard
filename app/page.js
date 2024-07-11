@@ -1,5 +1,6 @@
 import Header from '@components/Header';
 import SidePanel from '@components/SidePanel';
+import TopCards from '@components/TopCards';
 
 export default function Home() {
   return (
@@ -10,7 +11,9 @@ export default function Home() {
       <div className="flex-grow bg-[#121316] text-white p-4">
         <Header />
         <div className="p-4">
-          <div>No. of items boxes</div>
+          <div>
+            <TopCards />
+          </div>
           <div className="flex space-x-4 mt-4">
             <div>Chart 1</div>
             <div>Chart 2</div>
