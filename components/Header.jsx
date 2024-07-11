@@ -6,10 +6,10 @@ export default function Header() {
     <div className="hidden sm:block">
       <div className="flex items-center justify-end px-4 py-2">
         <div className="header_top__icon_wrapper">
-          <IoIosNotifications />
+          <IoIosNotifications className='w-4 h-4 mr-2'/>
         </div>
         <div className="header_top__icon_wrapper">
-          <CgProfile />
+          <CgProfile className='w-4 h-4 mr-2'/>
         </div>
         <div className="header_top__icon_wrapper">
           Main Account
