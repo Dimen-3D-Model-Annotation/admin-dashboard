@@ -9,6 +9,7 @@ export default function Home() {
         <SidePanel />
       </div>
       <div className="flex-grow bg-[#121316] text-white p-4">
+      <Header />
         
         <div className="p-4">
           <div>
