@@ -1,7 +1,7 @@
 import Header from '@components/Header';
 import SidePanel from '@components/SidePanel';
 import TopCards from '@components/TopCards';
-import Overview from './overview/page';
+// Remove Overview import if it's not needed here
 
 export default function Home() {
   return (
@@ -11,13 +11,11 @@ export default function Home() {
       </div>
       <div className="flex-grow bg-[#121316] text-white p-4">
         <Header />
-        
         <div className="p-4">
-          <div>
-            <Overview />
-          </div>
+          {/* Add content specific to Home page */}
+          {/* <TopCards /> */}
           <div className="flex space-x-4 mt-4">
-            
+            {/* Additional content can be added here */}
           </div>
         </div>
       </div>
