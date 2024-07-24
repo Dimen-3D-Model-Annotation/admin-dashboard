@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { GrOverview } from "react-icons/gr";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineSubscriptions } from "react-icons/md";
@@ -23,73 +24,73 @@ const SidePanel = () => {
 
       <ul className='mt-2 text-white flex-grow flex flex-col'>
         <li className='py-1 hover:shadow hover:bg-custom-gray rounded'>
-          <a href='#' className='px-3 flex items-center'>
+          <Link href="/admin/overview" className='px-3 flex items-center'>
             <GrOverview className='w-4 h-4 mr-2' />
             Overview
-          </a>
+          </Link>
         </li>
 
         <li className='mb-1 py-1 hover:shadow hover:bg-custom-gray rounded'>
-          <a href='#' className='px-3 flex items-center'>
+          <Link href="/admin/users"  className='px-3 flex items-center'>
             <FaRegUser className='w-4 h-4 mr-2' />
             Users
-          </a>
+          </Link>
         </li>
 
         <li className='mb-1 py-1 hover:shadow hover:bg-custom-gray rounded'>
-          <a href='#' className='px-3 flex items-center'>
+          <Link href="/admin/subscription"  className='px-3 flex items-center'>
             <MdOutlineSubscriptions className='w-4 h-4 mr-2' />
             Subscription
-          </a>
+          </Link>
         </li>
 
         <li className='mb-1 py-1 hover:shadow hover:bg-custom-gray rounded'>
-          <a href='#' className='px-3 flex items-center'>
+          <Link href="/admin/payments"  className='px-3 flex items-center'>
             <AiOutlineDollarCircle className='w-4 h-4 mr-2' />
             Payments
-          </a>
+          </Link>
         </li>
 
         <li className='mb-1 py-1 hover:shadow hover:bg-custom-gray rounded'>
-          <a href='#' className='px-3 flex items-center'>
+          <Link href="/admin/settings"  className='px-3 flex items-center'>
             <IoSettingsOutline className='w-4 h-4 mr-2' />
             Settings
-          </a>
+          </Link>
         </li>
 
         <li className='mb-1 py-1 hover:shadow hover:bg-custom-gray rounded'>
-          <a href='#' className='px-3 flex items-center'>
+          <Link href="/admin/documentation"  className='px-3 flex items-center'>
             <HiOutlineClipboardDocumentList className='w-4 h-4 mr-2' />
             Documentation
-          </a>
+          </Link>
         </li>
 
         <li className='mb-1 py-1 hover:shadow hover:bg-custom-gray rounded'>
-          <a href='#' className='px-3 flex items-center'>
+          <Link href="/admin/reports"  className='px-3 flex items-center'>
             <TbReportSearch className='w-4 h-4 mr-2' />
             Reports
-          </a>
+          </Link>
         </li>
 
         <li className='mb-1 py-1 hover:shadow hover:bg-custom-gray rounded'>
-          <a href='#' className='px-3 flex items-center'>
+          <Link href="/admin/support"  className='px-3 flex items-center'>
             <MdOutlineContactSupport className='w-4 h-4 mr-2' />
             Support
-          </a>
+          </Link>
         </li>
 
         <li className='mb-1 py-1 hover:shadow hover:bg-custom-gray rounded'>
-          <a href='#' className='px-3 flex items-center'>
+          <Link href="/admin/database"  className='px-3 flex items-center'>
             <GoDatabase className='w-4 h-4 mr-2' />
             Database
-          </a>
+          </Link>
         </li>
 
         <li className='mt-auto py-1 hover:shadow hover:bg-custom-gray rounded'>
-          <a href='#' className='px-3 flex items-center'>
+          <Link href="/admin/logout"  className='px-3 flex items-center'>
             <RiLogoutCircleLine className='w-4 h-4 mr-2' />
             Logout
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
