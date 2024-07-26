@@ -16,6 +16,7 @@ module.exports = {
         blackish: "#1b1b1b",
         'custom-gray': 'rgba(217, 217, 217, 0.38)',
         'custom-purple': '#A020FF',
+        'custom-purpleshade': '#C040FF'
       },
       width: {
         'custom-width': '75%', // Custom width class
