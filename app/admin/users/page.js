@@ -44,7 +44,7 @@ function Page() {
     <div className="flex flex-col items-center min-h-screen p-8">
       <label
         htmlFor="check"
-        className="flex bg-custom-togglegray cursor-pointer relative w-80 h-10 rounded-full items-center mb-4"
+        className="relative w-80 h-10 rounded-full bg-custom-togglegray cursor-pointer mb-4"
       >
         <input
           id="check"
@@ -53,18 +53,15 @@ function Page() {
           onChange={handleToggle}
           className="sr-only"
         />
-        <span className="absolute left-2 text-white font-bold">
-          Registered Users
-        </span>
-        <span className="absolute right-2 text-white font-bold">
-          Pro Users
-        </span>
         <span
-          className={`absolute w-1/2 h-3/4 bg-custom-gray rounded-full transition-all duration-500 ${
-            isChecked ? 'left-1/2' : 'left-0'
+          className={`absolute w-1/2 h-full rounded-full transition-all duration-500 flex items-center justify-center font-bold text-white ${
+            isChecked ? 'bg-custom-gray left-1/2' : 'bg-custom-gray left-0'
           }`}
-        />
+        >
+          {isChecked ? 'Pro Users' : 'Registered Users'}
+        </span>
       </label>
+
       <div className="w-full max-w-xl">
         {isChecked ? (
           <>
