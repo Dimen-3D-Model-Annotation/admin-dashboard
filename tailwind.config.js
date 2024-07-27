@@ -15,6 +15,7 @@ module.exports = {
         accent: "#FF8F9C",
         blackish: "#1b1b1b",
         'custom-gray': 'rgba(217, 217, 217, 0.38)',
+        'custom-togglegray': '#474747',
         'custom-purple': '#A020FF',
         'custom-purpleshade': '#C040FF'
       },
