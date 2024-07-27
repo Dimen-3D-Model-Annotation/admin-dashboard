@@ -21,3 +21,15 @@
     text-wrap: balance;
   }
 }
+
+.rowdiv {
+  margin: 5px;
+  border: 1px solid transparent;
+  padding: 5px 20px; /* Increase left and right padding */
+  border-radius: 10px;
+  background-color: rgba(217, 217, 217, 0.38);
+}
+
+body {
+  overflow: hidden; /* Hide the scrollbar */
+}
