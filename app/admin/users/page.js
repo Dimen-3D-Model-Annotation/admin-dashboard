@@ -2,29 +2,31 @@
 
 import React, { useState, useEffect } from 'react';
 import Row from '@components/Row';
+import Button from '@components/Button';
 
 function Page() {
   const [isChecked, setIsChecked] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   const registeredUsers = [
-    { 'name': 'Micheal Carlon', 'email': 'micheal@gmail.com' },
-    { 'name': 'Samree Mathun', 'email': 'samree@gmail.com' },
-    { 'name': 'Liza Perera', 'email': 'liza@gmail.com' },
-    { 'name': 'Hayath Sareej', 'email': 'hayasareej@gmail.com' },
-    { 'name': 'Lavishankar Shanmugaraj', 'email': 'hayasareej@gmail.com' },
-    { 'name': 'Micheal Carlon', 'email': 'micheal@gmail.com' },
-    { 'name': 'Samree Mathun', 'email': 'samree@gmail.com' },
-    { 'name': 'Liza Perera', 'email': 'liza@gmail.com' },
-    { 'name': 'Hayath Sareej', 'email': 'hayasareej@gmail.com' },
-    { 'name': 'Lavishankar Shanmugaraj', 'email': 'hayasareej@gmail.com' }
+    { 'name': 'Micheal Carlon', 'email': 'micheal@gmail.com', 'image': '/assets/images/user1.webp' },
+    { 'name': 'Samree Mathun', 'email': 'samree@gmail.com', 'image': '/assets/images/user2.png' },
+    { 'name': 'Liza Perera', 'email': 'liza@gmail.com', 'image': '/assets/images/user3.jpg' },
+    { 'name': 'Hayath Sareej', 'email': 'hayasareej@gmail.com', 'image': '/assets/images/user1.webp' },
+    { 'name': 'Lavishankar Shanmugaraj', 'email': 'hayasareej@gmail.com', 'image': '/assets/images/user2.png' },
+    { 'name': 'Micheal Carlon', 'email': 'micheal@gmail.com', 'image': '/assets/images/user3.jpg' },
+    { 'name': 'Samree Mathun', 'email': 'samree@gmail.com', 'image': '/assets/images/user1.webp' },
+    { 'name': 'Liza Perera', 'email': 'liza@gmail.com', 'image': '/assets/images/user2.png' },
+    { 'name': 'Hayath Sareej', 'email': 'hayasareej@gmail.com', 'image': '/assets/images/user3.jpg' },
+    { 'name': 'Lavishankar Shanmugaraj', 'email': 'hayasareej@gmail.com', 'image': '/assets/images/user1.webp' }
   ];
 
   const proUsers = [
-    { 'name': 'Maryam', 'email': 'mary@gmail.com' },
-    { 'name': 'Amrah', 'email': 'amrah@gmail.com' },
-    { 'name': 'Shuraifa', 'email': 'shuraif@gmail.com' },
-    { 'name': 'Afrose', 'email': 'afrose@gmail.com' }
+    { 'name': 'Hamsayini Snethilrasa', 'email': 'hamsasenthil@gmail.com', 'image': '/assets/images/user3.jpg' },
+    { 'name': 'Naheedha Maryam', 'email': 'mary@gmail.com', 'image': '/assets/images/user1.webp' },
+    { 'name': 'Amrah safwan', 'email': 'amrah@gmail.com', 'image': '/assets/images/user3.jpg' },
+    { 'name': 'Shuraifa Rafeek', 'email': 'shuraif@gmail.com', 'image': '/assets/images/user2.png' },
+    { 'name': 'Afrose Nazeer', 'email': 'afrose@gmail.com', 'image': '/assets/images/user1.webp' }
   ];
 
   useEffect(() => {
@@ -60,6 +62,13 @@ function Page() {
         >
           {isChecked ? 'Pro Users' : 'Registered Users'}
         </span>
+        <span
+          className={`absolute w-1/2 h-full transition-all duration-500 flex items-center justify-center font-bold text-white ${
+            isChecked ? 'left-0' : 'left-1/2'
+          }`}
+        >
+          {isChecked ? 'Registered Users' : 'Pro Users'}
+        </span>
       </label>
 
       <div className="w-full max-w-xl">
@@ -71,6 +80,10 @@ function Page() {
         ) : (
           <Row row={registeredUsers} />
         )}
+      </div>
+
+      <div className="flex justify-end w-full max-w-xl mt-4">
+        <Button label="Download PDF" />
       </div>
     </div>
   );
