@@ -21,6 +21,7 @@ module.exports = {
       },
       width: {
         'custom-width': '75%', // Custom width class
+        '120': '30rem', // Adjust this value as needed
       },
     },
   },
