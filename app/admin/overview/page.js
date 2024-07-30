@@ -116,7 +116,7 @@ function Overview() {
         </div>
 
         {isClient && (
-          <div className="flex flex-col lg:flex-row items-center shadow-md m-5 gap-10">
+          <div className="flex flex-col lg:flex-row items-center shadow-md mr-5 mt-4 gap-10">
             <ResponsiveContainer width="60%" height={400}>
               <RechartsLineChart
                 width={300}
@@ -164,13 +164,17 @@ function Overview() {
                   ))}
                 </Pie>
               </PieChart>
-              <div className="text-center">
-                <p>
-                  <span className="inline-block w-4 h-4 mr-2" style={{ backgroundColor: COLORS[0] }}></span>
-                  Free Plan Users  
-                  <span className="inline-block w-4 h-4 mr-2" style={{ backgroundColor: COLORS[1] }}></span>
-                  Premium Plan Users
-                </p>
+              <div className="text-center mt-4">
+                <div className="flex items-center justify-center gap-8">
+                  <div className="flex items-center">
+                    <span className="inline-block w-4 h-4 mr-2" style={{ backgroundColor: COLORS[0] }}></span>
+                    Free Plan Users
+                  </div>
+                  <div className="flex items-center">
+                    <span className="inline-block w-4 h-4 mr-2" style={{ backgroundColor: COLORS[1] }}></span>
+                    Premium Plan Users
+                  </div>
+                </div>
               </div>
             </div>
           </div>
