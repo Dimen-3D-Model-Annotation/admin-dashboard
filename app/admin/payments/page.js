@@ -21,11 +21,11 @@ function Page() {
   return (
     <div className="p-4">
       {/* Top Cards and Search Bar */}
-      <div className="mb-10">
+      <div className="mb-5">
         <div className="flex justify-between items-center mb-4">
           <div className="flex space-x-10">
             <TopCards icon={FaFileInvoiceDollar} number={253} label="Total Invoices" />
-            <TopCards icon={HiMiniReceiptRefund} number={75} label="Process Refund Requests" />
+            {/* <TopCards icon={HiMiniReceiptRefund} number={75} label="Process Refund Requests" /> */}
           </div>
           {/* Search Bar Container */}
           <div className="relative w-search-bar mt-20">
