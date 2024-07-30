@@ -28,7 +28,7 @@ function Page() {
             <TopCards icon={HiMiniReceiptRefund} number={75} label="Process Refund Requests" />
           </div>
           {/* Search Bar Container */}
-          <div className="relative w-search-bar">
+          <div className="relative w-search-bar mt-20">
             {/* Container for search bar and icon */}
             <div className="flex items-center border rounded-full overflow-hidden bg-custom-togglegray shadow-md">
               <CiSearch className="text-white absolute left-3" />
