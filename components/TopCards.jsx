@@ -1,32 +1,19 @@
 import React from 'react';
-import { FaUserAlt } from "react-icons/fa";
 
-const TopCards = () => {
+const TopCards = ({ icon: Icon, number, label }) => {
   return (
-    <div className='grid lg:grid-cols-5 gap-4 p-4'>
-      <div className='lg:col-span-2 col-span-2 bg-custom-purple text-white flex justify-between items-center p-4 rounded-lg h-24 lg:h-32 w-full'>
-        <div className='bg-custom-gray h-12 w-12 flex items-center justify-center text-white p-3 rounded-full'>
-          <FaUserAlt className='w-6 h-6' />
-        </div>
-        <div className='flex flex-col w-full items-end'>
-          <div className='ml-3 text-5xl font-bold'>62</div>
-          <div>System Users</div>
-        </div>
+    <div className="rounded-2xl bg-custom-purple h-35 w-60 shadow-sm flex items-center">
+      <div className="bg-custom-gray h-15 w-15 flex items-center justify-center text-white p-3 rounded-full ml-5">
+        <Icon className="w-8 h-8" />
       </div>
-      <div className='lg:col-span-2 col-span-1 bg-custom-purple text-white flex justify-between items-center p-4 rounded-lg h-24 lg:h-32 w-full'>
-        <div className='flex flex-col w-full items-end'>
-          <div className='ml-3 text-5xl font-bold'>10</div>
-          <div>Teams</div>
+      <div className="ml-10">
+        <div className="flex flex-col justify-center text-6xl font-bold mb-2">
+          {number}
         </div>
-      </div>
-      <div className='bg-custom-purple text-white flex justify-between items-center p-4 rounded-lg h-24 lg:h-32 w-full'>
-        <div className='flex flex-col w-full items-end'>
-          <div className='ml-3 text-5xl font-bold'>5</div>
-          <div>Projects</div>
-        </div>
+        <div className="text-sm mb-2">{label}</div>
       </div>
     </div>
   );
-}
+};
 
 export default TopCards;
