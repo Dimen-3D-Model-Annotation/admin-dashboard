@@ -22,6 +22,7 @@ module.exports = {
       width: {
         'custom-width': '75%', // Custom width class
         '120': '30rem', // Adjust this value as needed
+        'search-bar': '250px', // Adjusted width for search bar
       },
     },
   },

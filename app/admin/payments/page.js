@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaFileInvoiceDollar } from "react-icons/fa6";
 import { HiMiniReceiptRefund } from "react-icons/hi2";
+import { CiSearch } from "react-icons/ci"; // Import the search icon
 import TopCards from '@components/TopCards';
 import Rectangle from '@components/Rectangle';
 
@@ -18,11 +19,30 @@ const invoiceData = [
 
 function Page() {
   return (
-    <div>
-      <div className="flex space-x-10 mb-10">
-        <TopCards icon={FaFileInvoiceDollar} number={253} label="Total Invoices" />
-        <TopCards icon={HiMiniReceiptRefund} number={75} label="Process Refund Requests" />
+    <div className="p-4">
+      {/* Top Cards and Search Bar */}
+      <div className="mb-10">
+        <div className="flex justify-between items-center mb-4">
+          <div className="flex space-x-10">
+            <TopCards icon={FaFileInvoiceDollar} number={253} label="Total Invoices" />
+            <TopCards icon={HiMiniReceiptRefund} number={75} label="Process Refund Requests" />
+          </div>
+          {/* Search Bar Container */}
+          <div className="relative w-search-bar">
+            {/* Container for search bar and icon */}
+            <div className="flex items-center border rounded-full overflow-hidden bg-custom-togglegray shadow-md">
+              <CiSearch className="text-white absolute left-3" />
+              <input
+                type="text"
+                placeholder="Search here"
+                className="w-full pl-10 py-2 text-white bg-custom-togglegray border-none rounded-full outline-none"
+              />
+            </div>
+          </div>
+        </div>
       </div>
+      
+      {/* Invoice Details */}
       <div className="flex justify-center mb-4">
         <div className="w-full max-w-7xl">
           <div className="w-full h-auto rounded-full bg-custom-togglegray cursor-pointer mb-2 p-2">

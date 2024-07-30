@@ -1,13 +1,13 @@
 import React from 'react';
 import Button from '@components/Button';
 
-const Box = ({ box, isDetailBox = false, isPremiumPlan = false }) => {
-  const width = "w-120"; // Updated width for both heading and details
+const Box = ({ box, isDetailBox = false, isPremiumPlan = false, className = '' }) => {
+  const width = "w-120"; // Default width for general boxes
   const height = isDetailBox ? "h-auto" : "h-10";
   const borderRadius = isDetailBox ? "rounded-lg" : "rounded-full";
 
   return (
-    <div className={`relative ${width} ${height} ${borderRadius} bg-custom-togglegray cursor-pointer mb-4 flex flex-col justify-center p-4`}>
+    <div className={`relative ${width} ${height} ${borderRadius} ${className} bg-custom-togglegray cursor-pointer mb-4 flex flex-col justify-center p-4`}>
       {isDetailBox ? (
         <>
           {box.map((item, index) => (
