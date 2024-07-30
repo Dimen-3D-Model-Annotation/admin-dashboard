@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Link from 'next/link';
 import { PieChart, Pie, Cell } from "recharts";
 import { FaUserAlt, FaUsers } from "react-icons/fa";
 import { GoProjectSymlink } from "react-icons/go";
@@ -77,9 +78,9 @@ function Overview() {
         <div className="grid lg:grid-cols-3 gap-20 mt-5 mb-15 ml-5 mr-5">
           {/* First Card */}
           <div className="rounded-2xl bg-custom-purple h-30 shadow-sm flex items-center">
-            <div className="bg-custom-gray h-20 w-20 flex items-center justify-center text-white p-3 rounded-full ml-5">
-              <FaUserAlt className="w-10 h-10" />
-            </div>
+              <div className="bg-custom-gray h-20 w-20 flex items-center justify-center text-white p-3 rounded-full ml-5">
+                <FaUserAlt className="w-10 h-10" />
+              </div>
             <div className="ml-10">
               <div className="flex flex-col justify-center text-7xl font-bold mb-2">
                 62
@@ -89,31 +90,38 @@ function Overview() {
           </div>
 
           {/* Second Card */}
-          <div className="rounded-2xl bg-custom-purple h-40 shadow-sm flex items-center">
-            <div className="bg-custom-gray h-20 w-20 flex items-center justify-center text-white p-3 rounded-full ml-5">
-              <FaUsers className="w-12 h-12" />
-            </div>
-            <div className="ml-10">
-              <div className="flex flex-col justify-center text-7xl font-bold mb-2 mr-10">
-                154
+          <Link href="/admin/database" className='px-3 flex items-center'>
+            <div className="rounded-2xl bg-custom-purple h-40 shadow-sm flex items-center">
+              
+                <div className="bg-custom-gray h-20 w-20 flex items-center justify-center text-white p-3 rounded-full ml-5">
+                  <FaUsers className="w-12 h-12" />
+                </div>
+              
+              <div className="ml-10">
+                <div className="flex flex-col justify-center text-7xl font-bold mb-2 mr-10">
+                  154
+                </div>
+                <div className="text-lg">Teams</div>
               </div>
-              <div className="text-lg">Teams</div>
             </div>
-          </div>
+          </ Link>
 
           {/* Third Card */}
-          <div className="rounded-2xl bg-custom-purple h-40 shadow-sm flex items-center">
-            <div className="bg-custom-gray h-20 w-20 flex items-center justify-center text-white p-3 rounded-full ml-5">
-              <GoProjectSymlink className="w-10 h-10" />
-            </div>
-            <div className="ml-10">
-              <div className="flex flex-col justify-center text-7xl font-bold mb-2 mr-10">
-                235
+          <Link href="/admin/database" className='px-3 flex items-center'>
+            <div className="rounded-2xl bg-custom-purple h-40 shadow-sm flex items-center">
+                <div className="bg-custom-gray h-20 w-20 flex items-center justify-center text-white p-3 rounded-full ml-5">
+                  <GoProjectSymlink className="w-10 h-10" />
+                </div>
+              <div className="ml-10">
+                <div className="flex flex-col justify-center text-7xl font-bold mb-2 mr-10">
+                  235
+                </div>
+                <div className="text-lg">Projects</div>
               </div>
-              <div className="text-lg">Projects</div>
             </div>
-          </div>
+          </ Link>
         </div>
+        
 
         {isClient && (
           <div className="flex flex-col lg:flex-row items-center shadow-md mr-5 mt-4 gap-10">
