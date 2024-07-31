@@ -34,7 +34,7 @@ const Rectangles = () => {
           <div className="ml-60 bg-white rounded-lg p-2 text-black text-left w-80">I'm a passionate 3D Designer.</div> {/* Decreased width */}
         </div>
         <div>
-          <h2 className="ml-96 text-blue-400 text-left">Forgot Password?</h2>
+          <h2 className="ml-96 text-blue-400 text-left">Change Password?</h2>
          </div>
 
       </div>
