@@ -1,4 +1,4 @@
-@import 'tainwindcss/base';
+@import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
@@ -20,4 +20,16 @@
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.rowdiv {
+  margin: 5px;
+  border: 1px solid transparent;
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: rgba(217, 217, 217, 0.38);
+}
+
+body {
+  overflow: hidden;
 }
