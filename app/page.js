@@ -1,10 +1,24 @@
-import Image from "next/image";
-import Header from '@components/Header'
+import Header from '@components/Header';
+import SidePanel from '@components/SidePanel';
+import TopCards from '@components/TopCards';
 
 export default function Home() {
   return (
-    <div>
-      <Header />
+    <div className="min-h-screen flex flex-row">
+      <div className="bg-[#0F1014] text-white p-4 w-1/6">
+        <SidePanel />
+      </div>
+      <div className="flex-grow bg-[#121316] text-white p-4">
+        
+        <div className="p-4">
+          <div>
+            
+          </div>
+          <div className="flex space-x-4 mt-4">
+            
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
