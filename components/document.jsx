@@ -1,6 +1,6 @@
-import React from 'react'; 
+import React from 'react';
 
-const Rectangle = ({ projectName, date, userName, isDetailBox = false, isHeaderBox = false, projectDetailsList = [] }) => {
+const Rectangles = ({team, projectName, userName,  isDetailBox = false, isHeaderBox = false, teamDetailsList = [] }) => {
   // Define dynamic styles based on props
   const width = "w-full"; // Full width
   const height = "h-auto"; // Dynamic height
@@ -8,23 +8,39 @@ const Rectangle = ({ projectName, date, userName, isDetailBox = false, isHeaderB
 
   return (
     <div
-      className={relative ${width} ${height} ${borderRadius} bg-custom-togglegray cursor-pointer mb-4 p-4}
+      className={`relative ${width} ${height} ${borderRadius} bg-custom-togglegray cursor-pointer mb-4 p-4`}
     >
       {isHeaderBox ? (
-        <div className="grid grid-cols-2 gap-2">
-          <div className="text-left font-bold text-white">Document ID</div>
-          <div className="text-left font-bold text-white">Username</div>
+        <div className="grid grid-cols-3 gap-4">
+          <div className="text-left font-bold text-white">
+            {team}
+          </div>
+          <div className="text-left font-bold text-white">
+            {projectName}
+          </div>
+          <div className="text-left font-bold text-white">
+            {userName}
+          </div>
         </div>
       ) : isDetailBox ? (
-        <div className="grid grid-cols-2 gap-2">
-          {projectDetailsList.map((project, index) => (
-            <React.Fragment key={index}>
-              <div className="text-left text-white pl-4">{project.projectName}</div>
-             
-              <div className="text-left text-white">{project.userName}</div>
-             
-            </React.Fragment>
-          ))}
+        <div className="grid grid-cols-3 gap-4">
+          <div className="text-left text-white">
+            {teamDetailsList.map((project, index) => (
+              <p key={index} className="mb-4">{project.team}</p>
+            ))}
+          </div>
+
+          <div className="text-left text-white">
+            {teamDetailsList.map((project, index) => (
+              <p key={index} className="mb-4">{project.projectName}</p>
+            ))}
+          </div>
+          
+          <div className="text-left text-white">
+            {teamDetailsList.map((project, index) => (
+              <p key={index} className="mb-4">{project.userName}</p> 
+            ))}
+          </div>
         </div>
       ) : (
         <div className="text-center font-bold text-white">
@@ -35,4 +51,7 @@ const Rectangle = ({ projectName, date, userName, isDetailBox = false, isHeaderB
   );
 };
 
-export default Rectangle;  
+export default Document;
+
+
+
